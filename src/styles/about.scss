@@ -1,0 +1,22 @@
+.about__image {
+  width: 400px;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @include md-min {
+    flex-direction: row;
+  }
+}
+
+.about__description {
+  padding: 20px 0;
+}
+
+.about__hallo {
+  font-weight: 500;
+}

@@ -1,0 +1,43 @@
+.menu-burger {
+  color: $color-white;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 20px;
+  }
+
+  .menu-desktop__inner {
+    display: flex;
+    justify-content: space-between;
+    }
+  .menu-mobile {
+  display: none;
+  }
+
+
+ .menu-desktop__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+ }
+
+  .menu__link--contact{
+    padding: 5px 10px;
+    border: 1px solid $color-main;}
+
+    .menu-desktop__list--second {
+     justify-content: flex-end;
+     width: 5%;
+   }
+
+    .menu-desktop-logo {
+      
+      @include md-min {
+        width: 250px;
+      }}
