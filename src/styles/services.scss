@@ -1,0 +1,44 @@
+.services__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr ;
+  gap: 0px 0px;
+  grid-template-areas:
+    "tile-1 tile-1 tile-2 tile-2"
+    "tile-1 tile-1 tile-2 tile-2"
+    "tile-3 tile-3 tile-4 tile-4"
+    "tile-3 tile-3 tile-4 tile-4"
+    "tile-5 tile-5 tile-6 tile-6";
+  margin-left: -22px;
+  margin-right: -22px;
+}
+
+.tile-1 { grid-area: tile-1; }
+.tile-3 { grid-area: tile-4; }
+.tile-4 { grid-area: tile-2; }
+.tile-2 { grid-area: tile-3; }
+.tile-5 { grid-area: tile-5; }
+.tile-6 { grid-area: tile-6; }
+
+.service__bg {
+  background-color: $color-bg;
+}
+
+.service__title {
+  color: $color-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+}
+
+.service__tile {
+  aspect-ratio: 4/3;
+}

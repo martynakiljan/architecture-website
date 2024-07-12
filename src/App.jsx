@@ -4,6 +4,8 @@ import Header from './components/Header'
 import About from "./components/About.jsx";
 import Works from "./components/Works.jsx"
 import Footer from "./components/Footer.jsx"
+import Contact from "./components/Contact.jsx";
+import Services from "./components/Services.jsx"
 function App() {
   return (
     <>
@@ -11,8 +13,10 @@ function App() {
         <Menu />
         <Header />
         <About/>
+        <Services/>
         <Works/>
-          <Footer/>
+        <Contact/>
+        <Footer/>
       </div>
     </>
   )

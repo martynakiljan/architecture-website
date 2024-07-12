@@ -30,6 +30,7 @@ body {
   font-size: 12px;
   overflow-x: hidden;
   color: $color-main;
+  line-height: 1.2;
 
   @include md-min {
     font-size: 16px;
@@ -123,6 +124,7 @@ a {
 img {
   width: 100%;
   display: block;
+  height: 100%;
 }
 
 button {
