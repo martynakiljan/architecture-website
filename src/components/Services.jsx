@@ -6,6 +6,9 @@ const Services = () => {
     return(
         <div className="services section" id="services">
             <h1 className="title">What can I do for you?</h1>
+            <div className="services__star-container">
+                <div className="services__star star-double"></div>
+            </div>
             <div className="services__inner">
                 <div className="service__tile service__bg tile-1">
                     <h2 className="service__title">Full-Service Interior Renovation</h2>

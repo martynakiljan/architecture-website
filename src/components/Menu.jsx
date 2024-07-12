@@ -27,6 +27,11 @@ const Menu = () => {
               </a>
             </li>
             <li className="menu__item">
+              <a className="menu__link" href="#services">
+              services
+              </a>
+            </li>
+            <li className="menu__item">
               <a className="menu__link" href="#works">
                 works
               </a>

@@ -67,7 +67,7 @@ const Contact = ({ showMessage, showButton, onSubmit }) => {
                     )}
                     <label className='label-form'>Your number:</label>
                     <input
-                        placeholder="+48 676 234 234"
+                        placeholder="+41 737 345 2342"
                         className="input-form"
                         {...register("phone", {
                             required: "Phone number is required",
@@ -89,7 +89,7 @@ const Contact = ({ showMessage, showButton, onSubmit }) => {
                         {...register("message", { required: "Message is required", minLength: { value: 5, message: "Message must be at least 5 characters long" } })}
                         className="input-form"
                         id="message"
-                        placeholder="Hello Ola, I want you to take beautiful photos of me!"
+                        placeholder="Hi! I want you to design my kitchen!"
                     ></textarea>
                     {errors.message && (
                         <p className="form-error">

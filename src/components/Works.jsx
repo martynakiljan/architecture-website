@@ -18,13 +18,18 @@ const Works = () => {
         <div className="works section" id="works">
             <div className="works__inner">
                 <h1 className="title">what I did recently</h1>
-                <p className="works__info">Lorem ipsum dolor sit amet consectetur adipiscing elit semper curabitur, ridiculus scelerisque aenean iaculis maecenas donec volutpat aptent, lacus orci primis tortor vulputate mollis commodo fermentum</p>
-
+                <p className="works__info">Lorem ipsum dolor sit amet consectetur adipiscing elit semper curabitur,
+                    ridiculus scelerisque aenean iaculis maecenas donec volutpat aptent, lacus orci primis tortor
+                    vulputate mollis commodo fermentum</p>
+                <div className="works__star-container">
+                    <div className="works_star star-double"></div>
+                </div>
                 <Swiper
                     effect={'coverflow'}
                     grabCursor={true}
                     centeredSlides={true}
                     slidesPerView={'auto'}
+                    initialSlide={2}
                     coverflowEffect={{
                         rotate: 50,
                         stretch: 0,
@@ -37,22 +42,22 @@ const Works = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <img src={workImage1} />
+                        <img src={workImage1}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img  src={workImage2} />
+                        <img src={workImage2}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img  src={workImage3} />
+                        <img src={workImage3}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img  src={workImage4}/>
+                        <img src={workImage4}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img  src={workImage5}/>
+                        <img src={workImage5}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img  src={workImage6}/>
+                        <img src={workImage6}/>
                     </SwiperSlide>
                 </Swiper>
             </div>
@@ -61,5 +66,4 @@ const Works = () => {
 }
 
 
-
-export  default  Works;
+export default Works;

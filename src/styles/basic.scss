@@ -164,3 +164,34 @@ a {
   width: 25px;
   height: 25px;
 }
+svg {
+  height: 30px;
+  width: 30px;
+}
+
+.star-beige {
+  background-image: url("src/assets/images/star-big.png");
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 10px;
+}
+
+.star-dark {
+  background-image: url("src/assets/images/star-dark.png");
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 10px;
+}
+
+.star-double{
+  background-image: url("src/assets/images/star-double.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 10px
+}

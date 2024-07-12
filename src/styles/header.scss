@@ -21,8 +21,13 @@
 }
 
 .header__title {
-    font-size: 70px;
+    font-size: 100px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__subtitle {

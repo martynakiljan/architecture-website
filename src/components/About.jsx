@@ -9,8 +9,11 @@ const About = () => {
                 <div className="about__col">
                     <img src={aboutImage} alt="portrait" className="about__image"/>
                 </div>
-                <div className="about__col">
-                    <p  className="about__description about__hallo">Hi, I am Hanah! </p>
+                <div className="about__col about__col--bg">
+                    <div className="about__star-container">
+                        <div className="about__star star-dark"></div>
+                    </div>
+                    <p className="about__description about__hallo">Hi, I am Hanah! </p>
                     <p className="about__description">Aliquet tLorem ipsum dolor sit amet consectetur adipiscing, elit a tempor tellus neque curae aptent, vel penatibus arcu tincidunt eu. Lectus vivamus convallis interdum nunc eu enim at turpis felis in cubilia    Lorem ipsum dolor sit amet consectetur adipiscing
                         elit posuere, in potenti convallis tellus sem
                         pellentesque penatibus varius cubilia    Lorem ipsum dolor sit amet consectetur adipiscing
