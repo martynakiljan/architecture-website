@@ -13,6 +13,7 @@ border-bottom: 2px dotted #e8bf9e;
   text-align: right;
   color: $color-light-beige;
   gap: 10px;
+  font-weight: 300;
 
   @include md-min {
     font-size: 50px;

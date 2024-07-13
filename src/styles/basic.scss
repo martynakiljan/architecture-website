@@ -158,7 +158,7 @@ button {
   padding-bottom: 50px;
   font-weight: lighter;
   margin: 0 auto;
-  color: $color-main;
+  color: $color-light-beige;
 
   @include md-min {
     font-size: 50px;
@@ -166,10 +166,9 @@ button {
   }
 
   &.title__service {
-    @include md-max {
       padding-bottom: 0;
     }
-  }
+  
 }
 
 a {
