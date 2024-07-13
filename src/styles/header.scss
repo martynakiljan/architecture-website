@@ -1,66 +1,104 @@
 .header__inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    @include md-min {
-        flex-direction: row;
-        align-items: center;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 50px;
+  @include md-min {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+  }
 }
 
 .header__col {
+  width: 100%;
+
+  @include md-min {
     width: 60%;
+  }
 }
 
 .header__col--img {
-    width: 40%;
+  width: 100%;
+  margin-top: 30px;
 
-    @include md-min {
-        margin-top: 100px;
-    }
+  @include md-min {
+    margin-top: 100px;
+    width: 40%;
+    margin-top: 0;
+  }
 }
 
 .header__title {
-    font-size: 100px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Cinzel", serif;
+  font-weight: lighter;
+
+  @include md-min {
+    width: 100%;
+    font-size: 70px;
+  }
 }
 
 .header__subtitle {
-    font-size: 40px;
-    text-align: center;
+  font-size: 27px;
+  text-align: center;
+  font-weight: lighter;
+  font-family: "Cinzel", serif;
+  color: $color-light-beige;
 
-    font-weight: lighter;
+  @include md-min {
+    font-size: 40px;
+  }
 }
 
 .header__description {
+  width: 100%;
+  text-align: left;
+  margin-left: 30px;
+
+  @include md-min {
     width: 50%;
-    text-align: left;
-    margin-left: 30px;
+  }
 }
 
 .header__bottom {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    
-    @include md-min {
-        flex-direction: row;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
-    }
+  @include md-min {
+    flex-direction: row;
+
+  }
 }
+
 .header__button {
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: none;
-    padding-right: 10px;
-    color: $color-main;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  padding-right: 10px;
+  color: $color-main;
+}
+
+.header__col--image {
+  @include md-max {
+    margin-left: -20px;
+    margin-right: -20px;
+    aspect-ratio: 3/4;
+    width: 90vw;
+    object-fit: cover;
+  }
 }

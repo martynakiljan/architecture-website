@@ -10,7 +10,7 @@ const Footer = () => {
                             <p className="footer__contact--name">Phone</p>
                             <p className="footer__contact--info">+41 767 345 243</p>
                         </div>
-                        <div className="footer__copyright">
+                        <div className="footer__copyright footer__copyright--mobile">
                             © Architecture H.J
                         </div>
                     </div>
@@ -19,7 +19,7 @@ const Footer = () => {
                             <p className="footer__contact--name">Email</p>
                             <p className="footer__contact--info">alice.be@gmail.com</p>
                         </div>
-                        <div className="footer__social">
+                        <div className="footer__social  footer__copyright--mobile">
                             <Social/>
                         </div>
                     </div>
@@ -27,6 +27,12 @@ const Footer = () => {
                         <div className="footer__contact">
                             <p className="footer__contact--name">Address</p>
                             <p className="footer__contact--info">Zürich, Seestrasse 14</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="footer__copyright--desktop">
+                            <Social/>
+                            <p className="footer__copyright"> © Architecture H.J </p>
                         </div>
                     </div>
                 </div>

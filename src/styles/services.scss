@@ -36,7 +36,11 @@
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  font-size: 40px;
+  font-size: 14px;
+
+  @include md-min {
+    font-size: 40px;
+  }
 }
 
 .service__tile {

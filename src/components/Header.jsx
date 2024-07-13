@@ -11,7 +11,7 @@ const Header = () => {
                     <h1 className="header__subtitle"> Live Your Reality</h1>
                 </div>
                 <div className="header__col header__col--img">
-                    <img alt="furniture" src={headerImage} />
+                    <img className="header__col--image" alt="furniture" src={headerImage} />
                 </div>
             </div>
         </div>

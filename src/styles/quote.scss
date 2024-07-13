@@ -1,12 +1,22 @@
 .quote {
-  padding: 100px 0;
+  padding: 50px 0;
+  border-top: 2px dotted  $color-bg;
+border-bottom: 2px dotted #e8bf9e;
+  @include md-min {
+    padding: 60px 0;
+  }
 }
 
 .quote__text {
-  font-size: 50px;
+  font-size: 25px;
   display: flex;
   text-align: right;
+  color: $color-light-beige;
   gap: 10px;
+
+  @include md-min {
+    font-size: 50px;
+  }
 }
 
 .quote__author {
@@ -17,9 +27,12 @@
 
 .quote-icon {
   background-image: url("src/assets/images/quote-icon.png");
-  width: 80px;
-  height: 30px;
+  width: 100px;
+  height: 20px;
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
+  @include md-min {
+    height: 32px;
+  }
 }

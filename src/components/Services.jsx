@@ -5,7 +5,7 @@ import service3Image from "../assets/images/services/service-3.jpg"
 const Services = () => {
     return(
         <div className="services section" id="services">
-            <h1 className="title">What can I do for you?</h1>
+            <h1 className="title title__service">What can I do for you?</h1>
             <div className="services__star-container">
                 <div className="services__star star-double"></div>
             </div>

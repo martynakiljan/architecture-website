@@ -14,12 +14,21 @@ html {
 
 .App {
   position: relative;
-  width: 1200px;
-  margin: 30px auto;
+  width: 90%;
+  margin: 20px auto;
   background-color: $color-bg-2;
   min-height: 2000px;
   padding: 0 20px;
+  line-height: 1.5;
 
+  @include md-min {
+    margin: 30px auto;
+    max-width: 1200px;
+  }
+
+  @include md-max {
+    overflow-x: hidden;
+  }
 }
 
 body {
@@ -150,9 +159,16 @@ button {
   font-weight: lighter;
   margin: 0 auto;
   color: $color-main;
+
   @include md-min {
     font-size: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
+  }
+
+  &.title__service {
+    @include md-max {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -171,27 +187,44 @@ svg {
 
 .star-beige {
   background-image: url("src/assets/images/star-big.png");
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 10px;
+
+  @include md-min(){
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .star-dark {
   background-image: url("src/assets/images/star-dark.png");
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 10px;
+
+  @include md-min(){
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .star-double{
   background-image: url("src/assets/images/star-double.png");
-  width: 150px;
-  height: 150px;
+  width: 50px;
+  height: 50px;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 10px
+  margin: 0 10px;
+  margin-left: -10px;
+
+  @include md-min(){
+    width: 100px;
+    height: 100px;
+    margin-left: 0;
+  }
 }
