@@ -1,7 +1,4 @@
 import headerImage from '../assets/images/header/header.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import Social from "./Social.jsx";
 const Header = () => {
     return (
         <div className="header section" id="home">
