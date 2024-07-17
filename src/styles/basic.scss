@@ -1,49 +1,49 @@
-@import "./mixins";
-@import "./variables";
+@import './mixins';
+@import './variables';
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 200px;
+	scroll-behavior: smooth;
+	scroll-padding-top: 200px;
 }
 
 .App {
-  position: relative;
-  width: 90%;
-  margin: 20px auto;
-  background-color: $color-bg-2;
-  min-height: 2000px;
-  padding: 0 20px;
-  line-height: 1.5;
+	position: relative;
+	width: 90%;
+	margin: 20px auto;
+	background-color: $color-bg-2;
+	min-height: 2000px;
+	padding: 0 20px;
+	line-height: 1.5;
 
-  @include md-min {
-    margin: 30px auto;
-    max-width: 1200px;
-  }
+	@include md-min {
+		margin: 30px auto;
+		max-width: 1200px;
+	}
 
-  @include md-max {
-    overflow-x: hidden;
-  }
+	@include md-max {
+		overflow-x: hidden;
+	}
 }
 
 body {
-  background-color: $color-bg;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-  overflow-x: hidden;
-  color: $color-main;
-  line-height: 1.2;
+	background-color: $color-bg;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	overflow-x: hidden;
+	color: $color-main;
+	line-height: 1.2;
 
-  @include md-min {
-    font-size: 16px;
-  }
+	@include md-min {
+		font-size: 16px;
+	}
 }
 
 html,
@@ -97,133 +97,140 @@ header,
 nav,
 section,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	text-size-adjust: none;
 }
 
 li {
-  list-style-type: none;
-  list-style: none;
+	list-style-type: none;
+	list-style: none;
 }
 
 input {
-  border-radius: 0;
-  outline: none;
+	border-radius: 0;
+	outline: none;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
 
-  @include xl-min {
-    padding: 0;
-  }
+	@include xl-min {
+		padding: 0;
+	}
 }
 
 img {
-  width: 100%;
-  display: block;
-  height: 100%;
+	width: 100%;
+	display: block;
+	height: 100%;
 }
 
 button {
-  cursor: pointer;
-  font-size: 12px;
+	cursor: pointer;
+	font-size: 12px;
 
-  @include md-min {
-    font-size: 16px;
-  }
+	@include md-min {
+		font-size: 16px;
+	}
 }
 
 .section {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 
-  @include md-min {
-    margin-bottom: 100px;
-  }
+	@include md-min {
+		margin-bottom: 100px;
+	}
 }
 
 .title {
-  font-size: 30px;
-  padding-bottom: 50px;
-  font-weight: lighter;
-  margin: 0 auto;
-  color: $color-light-beige;
+	font-size: 30px;
+	padding-bottom: 50px;
+	font-weight: lighter;
+	margin: 0 auto;
+	color: $color-light-beige;
 
-  @include md-min {
-    font-size: 50px;
-    padding-bottom: 60px;
-  }
+	@include md-min {
+		font-size: 50px;
+		padding-bottom: 60px;
+	}
 
-  &.title__service {
-      padding-bottom: 0;
-    }
-  
+	&.title__service {
+		padding-bottom: 0;
+	}
 }
 
 a {
-  color: unset;
+	color: unset;
 }
 
 .svg-inline--fa {
-  width: 25px;
-  height: 25px;
-}
-svg {
-  height: 30px;
-  width: 30px;
+	width: 25px;
+	height: 25px;
 }
 
 .star-beige {
-  background-image: url("src/assets/images/star-big.png");
-  width: 70px;
-  height: 70px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0 10px;
+	background-image: url('src/assets/images/star-big.png');
+	width: 70px;
+	height: 70px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 10px;
 
-  @include md-min(){
-    width: 100px;
-    height: 100px;
-  }
+	@include md-min() {
+		width: 100px;
+		height: 100px;
+	}
 }
 
 .star-dark {
-  background-image: url("src/assets/images/star-dark.png");
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0 10px;
+	background-image: url('src/assets/images/star-dark.png');
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 10px;
 
-  @include md-min(){
-    width: 100px;
-    height: 100px;
-  }
+	@include md-min() {
+		width: 100px;
+		height: 100px;
+	}
 }
 
-.star-double{
-  background-image: url("src/assets/images/star-double.png");
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0 10px;
-  margin-left: -10px;
+.star-double {
+	background-image: url('src/assets/images/star-double.png');
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 10px;
+	margin-left: -10px;
 
-  @include md-min(){
-    width: 100px;
-    height: 100px;
-    margin-left: 0;
-  }
+	@include md-min() {
+		width: 100px;
+		height: 100px;
+		margin-left: 0;
+	}
+}
+
+.loading-spinner {
+	position: absolute;
+	top: 50%; /* position the top  edge of the element at the middle of the parent */
+	left: 50%; /* position the left edge of the element at the middle of the parent */
+
+	transform: translate(
+		-50%,
+		-50%
+	); /* This is a shorthand of
+                                       translateX(-50%) and translateY(-50%) */
 }

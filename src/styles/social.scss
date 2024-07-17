@@ -1,32 +1,38 @@
 .social {
-  margin-top: 100px;
-  border: 1px solid $color-main;
-  padding: 5px 10px;
-  width: 30%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+	margin-top: 100px;
+	border: 1px solid $color-main;
+	padding: 5px 10px;
+	width: 30%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 
-  .footer & {
-    margin-top: 0;
-    border: none;
-    padding: 0;
-  }
+	.footer & {
+		margin-top: 0;
+		border: none;
+		padding: 0;
+	}
 
-  svg {
-    width: 26px;
-    height: 26px;
-  }
+	svg {
+		width: 26px;
+		height: 26px;
+	}
 
-  .social__icon {
-    padding: 0;
-  }
-  .social__icon:nth-of-type(2) {
-    padding: 0 15px;
-  }
+	.social__icon {
+		padding: 0;
+	}
+	.social__icon:nth-of-type(2) {
+		padding: 0 15px;
+	}
 }
 
 .social__icon {
-  padding: 0 10px;
-  color: $color-main;
+	padding: 0 10px;
+	color: $color-main;
+
+	&:hover {
+		svg {
+			color: $color-bg;
+		}
+	}
 }

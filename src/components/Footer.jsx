@@ -17,7 +17,7 @@ const Footer = () => {
                     <div className="footer__col">
                         <div className="footer__contact">
                             <p className="footer__contact--name">Email</p>
-                            <p className="footer__contact--info">alice.be@gmail.com</p>
+                            <a className="footer__contact--info" href="mailto:someone@example.com">alice.be@gmail.com</a>
                         </div>
                         <div className="footer__social  footer__copyright--mobile">
                             <Social/>

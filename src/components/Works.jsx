@@ -18,9 +18,7 @@ const Works = () => {
         <div className="works section" id="works">
             <div className="works__inner">
                 <h1 className="title">what I did recently</h1>
-                <p className="works__info">Lorem ipsum dolor sit amet consectetur adipiscing elit semper curabitur,
-                    ridiculus scelerisque aenean iaculis maecenas donec volutpat aptent, lacus orci primis tortor
-                    vulputate mollis commodo fermentum</p>
+                <p className="works__info">I recently completed the design of a modern office center in the heart of the city, seamlessly combining functionality with elegant design. Additionally, I designed an eco-friendly residential complex that incorporates sustainable materials and green technologies. My latest work also includes a luxurious villa by the sea, featuring panoramic views and state-of-the-art amenities.</p>
                 <div className="works__star-container">
                     <div className="works_star star-double"></div>
                 </div>
