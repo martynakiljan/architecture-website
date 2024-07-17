@@ -43,10 +43,6 @@
 	align-items: center;
 }
 
-.form__button {
-	margin: 50px auto;
-}
-
 .form-error {
 	color: $color-error;
 	font-size: 11px;
@@ -66,6 +62,8 @@
 	padding: 7px 20px;
 	color: $color-main;
 	background-color: transparent;
+	margin: 50px auto;
+	font-weight: 400;
 }
 
 .spinner {

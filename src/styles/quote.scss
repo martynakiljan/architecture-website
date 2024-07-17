@@ -1,39 +1,40 @@
 .quote {
-  padding: 50px 0;
-  border-top: 2px dotted  $color-bg;
-border-bottom: 2px dotted #e8bf9e;
-  @include md-min {
-    padding: 60px 0;
-  }
+	padding: 50px 0;
+	border-top: 2px dotted $color-bg;
+	border-bottom: 2px dotted #e8bf9e;
+	@include md-min {
+		padding: 60px 0;
+	}
 }
 
 .quote__text {
-  font-size: 25px;
-  display: flex;
-  text-align: right;
-  color: $color-light-beige;
-  gap: 10px;
-  font-weight: 300;
+	font-size: 25px;
+	display: flex;
+	text-align: right;
+	color: $color-light-beige;
+	gap: 10px;
+	font-weight: 300;
 
-  @include md-min {
-    font-size: 50px;
-  }
+	@include md-min {
+		font-size: 50px;
+	}
 }
 
 .quote__author {
-  text-align: right;
-  display: block;
-  padding: 10px 0;
+	text-align: center;
+	display: block;
+	padding: 10px 0;
+	font-style: italic;
 }
 
 .quote-icon {
-  background-image: url("src/assets/images/quote-icon-2.png");
-  width: 100px;
-  height: 20px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: block;
-  @include md-min {
-    height: 32px;
-  }
+	background-image: url('src/assets/images/quote-icon-2.png');
+	width: 100px;
+	height: 20px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+	@include md-min {
+		height: 32px;
+	}
 }
