@@ -20,6 +20,7 @@ html {
 	min-height: 2000px;
 	padding: 0 20px;
 	line-height: 1.5;
+	overflow-x: hidden;
 
 	@include md-min {
 		margin: 30px auto;
@@ -214,7 +215,7 @@ a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0 10px;
-	margin-left: -10px;
+	margin-left: -12px;
 
 	@include md-min() {
 		width: 100px;

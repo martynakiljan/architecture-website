@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form'
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import RotateLoader from 'react-spinners/ClipLoader'
 
@@ -21,16 +21,12 @@ const Contact = () => {
 		sendEmailFun(data)
 	}
 
-	useEffect(() => {
-		console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID)
-	})
-
 	const sendEmailFun = () => {
 		setLoading(true)
 		emailjs
-        .sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, {
-            publicKey: process.env.REACT_APP_EMAILJS_USER_ID,
-          })
+			.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, {
+				publicKey: process.env.REACT_APP_EMAILJS_USER_ID,
+			})
 			.then(
 				result => {
 					console.log('SUCCESS!', result.text)
@@ -38,7 +34,7 @@ const Contact = () => {
 					resetForm()
 					setTimeout(() => {
 						setSuccessForm(false)
-					}, 3000)
+					}, 5000)
 				},
 				error => {
 					console.error('FAILED...', error.text)

@@ -21,10 +21,14 @@
 }
 
 .quote__author {
-	text-align: center;
+	text-align: right;
 	display: block;
 	padding: 10px 0;
 	font-style: italic;
+
+	@include md-min {
+		text-align: center;
+	}
 }
 
 .quote-icon {

@@ -5,14 +5,33 @@ import logo from '../assets/images/header/logo.png'
 const Menu = () => {
 	const [isOpen, setOpen] = useState(false)
 
+	const handleLinkClick = (e, sectionId) => {
+		e.preventDefault()
+		setOpen(false)
+		console.log('handleLinkClick called')
+		console.log('sectionId:', sectionId)
+
+		const section = document.getElementById(sectionId)
+		if (section) {
+			const headerOffset = 50
+			const sectionTop = section.getBoundingClientRect().top + window.scrollY
+			console.log('sectionTop:', sectionTop)
+			window.scrollTo({
+				top: sectionTop - headerOffset,
+				behavior: 'smooth',
+			})
+		}
+	}
+
 	useEffect(() => {
 		const handleScroll = () => {
-			if (isOpen) {
-				setOpen(false)
-			}
+			setOpen(false)
 		}
 
-		window.addEventListener('scroll', handleScroll)
+		if (isOpen) {
+			window.addEventListener('scroll', handleScroll)
+		}
+
 		return () => {
 			window.removeEventListener('scroll', handleScroll)
 		}
@@ -25,27 +44,30 @@ const Menu = () => {
 				<div className={`menu-mobile__content ${isOpen ? 'open' : ''}`}>
 					<ul className='menu-mobile__list'>
 						<li className='menu__item'>
-							<a className='menu__link' href='#home' onClick={() => setOpen(false)}>
+							<a className='menu__link' href='#home' onClick={e => handleLinkClick(e, 'home')}>
 								home
 							</a>
 						</li>
 						<li className='menu__item'>
-							<a className='menu__link' href='#about' onClick={() => setOpen(false)}>
+							<a className='menu__link' href='#about' onClick={e => handleLinkClick(e, 'about')}>
 								about me
 							</a>
 						</li>
 						<li className='menu__item'>
-							<a className='menu__link' href='#services' onClick={() => setOpen(false)}>
+							<a className='menu__link' href='#services' onClick={e => handleLinkClick(e, 'services')}>
 								services
 							</a>
 						</li>
 						<li className='menu__item'>
-							<a className='menu__link' href='#works' onClick={() => setOpen(false)}>
+							<a className='menu__link' href='#works' onClick={e => handleLinkClick(e, 'works')}>
 								works
 							</a>
 						</li>
 						<li className='menu__item'>
-							<a className='menu__link menu__link--contact' href='#contact' onClick={() => setOpen(false)}>
+							<a
+								className='menu__link menu__link--contact'
+								href='#contact'
+								onClick={e => handleLinkClick(e, 'contact')}>
 								contact
 							</a>
 						</li>
@@ -55,33 +77,36 @@ const Menu = () => {
 			<div className='menu-desktop'>
 				<div className='menu-desktop__inner'>
 					<a className='menu-desktop-logo'>
-						<img alt='logo' src={logo}></img>
+						<img alt='logo' src={logo} />
 					</a>
 					<ul className='menu-desktop__list'>
 						<li className='menu__item'>
-							<a className='menu__link' href='#home'>
+							<a className='menu__link' href='#home' onClick={e => handleLinkClick(e, 'home')}>
 								home
 							</a>
 						</li>
 						<li className='menu__item'>
-							<a className='menu__link' href='#about'>
+							<a className='menu__link' href='#about' onClick={e => handleLinkClick(e, 'about')}>
 								about me
 							</a>
 						</li>
 						<li className='menu__item'>
-							<a className='menu__link' href='#services'>
+							<a className='menu__link' href='#services' onClick={e => handleLinkClick(e, 'services')}>
 								services
 							</a>
 						</li>
 						<li className='menu__item'>
-							<a className='menu__link' href='#works'>
+							<a className='menu__link' href='#works' onClick={e => handleLinkClick(e, 'works')}>
 								works
 							</a>
 						</li>
 					</ul>
 					<ul className='menu-desktop__list menu-desktop__list--second'>
 						<li className='menu__item'>
-							<a className='menu__link menu__link--contact' href='#contact'>
+							<a
+								className='menu__link menu__link--contact'
+								href='#contact'
+								onClick={e => handleLinkClick(e, 'contact')}>
 								contact
 							</a>
 						</li>
